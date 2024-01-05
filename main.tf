@@ -5,17 +5,19 @@ provider "azurerm" {
  client_secret = "M-28Q~cJSDexb4a7Rh1XseBySpEIIzN5T2J-4aPB"
 tenant_id = "b3e2a00d-5677-44ff-9b4f-c771831f95b7" 
 
-features {}
+features {
+  
+}
 }
 
-resource "azurerm_resource_group" "demo_resourceg789" {
-  name     = "demo-resourceg789"
+resource "azurerm_resource_group" "demo_resourceg0789" {
+  name     = "demo-resourceg0789"
   location = "East Us"
 }
 # Storage Account Resource
 
-resource "azurerm_storage_account" "newdemostorage789123" {
-  name                     = "newdemostorage789123"
+resource "azurerm_storage_account" "newdemostorage0789123" {
+  name                     = "newdemostorage0789123"
   resource_group_name      = azurerm_resource_group.demo_resourceg789.name
   location                 = azurerm_resource_group.demo_resourceg789.location
   account_tier             = "Standard"
