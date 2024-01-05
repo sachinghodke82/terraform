@@ -7,9 +7,10 @@ tenant_id = "b3e2a00d-5677-44ff-9b4f-c771831f95b7"
 
 features {}
 }
-locals {
-resource_group="demo-rm"
-location="east us"
+
+resource "azurerm_resource_group" "demo_resourceg789" {
+  name     = "demo-resourceg789"
+  location = "East Us"
 }
 # Storage Account Resource
 
